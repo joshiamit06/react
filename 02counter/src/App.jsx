@@ -79,6 +79,11 @@ export default App
 // prevCounter and increasing it by setCounter(prevCounter => prevCounter + 1) so now
 // counter is 12 like wise we can increase counter value by 4 by clicking Add value button 
 // just by once.
+// Note that in react with useState hooks, onClick always except a call back function
+// onClick={()=> setColor("blue")}   like this
+// dont call setColor function as per below
+// onClick={setColor("blue")}  in this case onClick is returning function return value
+// not a function 
 
 
 import { useState } from 'react'
